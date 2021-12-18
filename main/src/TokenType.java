@@ -1,48 +1,52 @@
-public enum TokenType {
+public enum 	TokenType {
 
-	WhiteSpace,
-	Tab,
-	NewLine,
+	WHITESPACE,
+	TAB,
+	NEWLINE,
 
-	Plus,
-	Minus,
-	Multiply,
-	Divide,
-    Remainder,
+	PLUS,
+	MINUS,
+	MULTIPLY,
+	DIVIDE,
+    REMAINDER,
+
+	AND,
+	OR,
+	NOT,
 	
-	EqualEqual,
-	Equal,
-	NotEqual,
+	EQUAL,
+	ASSIGN,
+	NOTEQUAL,
 	Greater,
 	Lower,
-    GreaterEqual,
-    LowerEqual,
+    GE,
+    LE,
 
-	Int,
-	Double,
-    String,
-    Boolean,
+	INTEGER,
+	FLOAT,
+    STRING,
+    BOOL,
 
-	If,
-	Else,
-    Elif,
+	IF,
+	ElSE,
+    ELIF,
 
-    Loop,
-    While,
+    LOOP,
+    WHILE,
 
-    Break,
-    Continue,
+    BREAK,
+    CONTINUE,
 
-	Semicolon,
-	Comma,
+	SEMICOLON,
+	COMMA,
 
-	Identifier,
+	IDENTIFIER,
 
-    Print;
+    PRINT;
 
 
 	public boolean isAuxiliary() {
-		return this == NewLine || this == Tab
-				|| this == WhiteSpace;
+		return this == NEWLINE || this == TAB
+				|| this == WHITESPACE;
 	}
 }
