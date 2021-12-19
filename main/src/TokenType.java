@@ -13,12 +13,14 @@ public enum 	TokenType {
 	AND,
 	OR,
 	NOT,
+	TRUE,
+	FALSE,
 	
 	EQUAL,
 	ASSIGN,
 	NOTEQUAL,
-	Greater,
-	Lower,
+	GREATER,
+	LOWER,
     GE,
     LE,
 
@@ -28,8 +30,8 @@ public enum 	TokenType {
     BOOL,
 
 	IF,
-	ElSE,
-    ELIF,
+	ELSE,
+	ELIF,
 
     LOOP,
     WHILE,
@@ -42,7 +44,13 @@ public enum 	TokenType {
 
 	IDENTIFIER,
 
-    PRINT;
+    PRINT,
+
+	OPENPARANTHESIS,
+	CLOSEPARANTHESIS,
+	OPENCURLYBRACKET,
+	CLOSECURLYBRACKET;
+
 
 
 	public boolean isAuxiliary() {
